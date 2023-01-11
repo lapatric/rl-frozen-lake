@@ -37,6 +37,7 @@ print("Episode terminated!")
 In order to learn how to get from the starting point to the destination, we need an agent we can train. It holds the knowledge of the Q-table and ultimately the learned policy. Beyond said Q-table `q_values`, the learning rate `lr`, an epsilon decay `epsilon_decay` and a discount factor `discount_factor`, we define three functions. 
 - `get_action(state)`: Given a `state` we sample an action randomly (exploration) or pick the optimal action based on the current q-values (exploitation), `int(np.argmax(self.q_values[state]))`.
 - `update(state, action, reward)`: This function updates the expected discounted return for taking action `action` in state `state`.
+- `decay_epsilon()`: Decays the epsilon value.
 
 The update to the *Q-table* $Q$ upon taking *action* $a$ in *state* $s$ with resulting *reward* $r$ is as follows:
 
