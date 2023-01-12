@@ -1,8 +1,9 @@
 # OpenAI Gym and Python for Q-learning
 
-![some text](./frozenlaketrainingvis.gif)
-
 This repo follows the [Frozen Lake tutorial](https://www.gymlibrary.dev/environments/toy_text/frozen_lake/).
+
+![some text](./frozenlaketrainingvis.gif)
+*Visualization of the agent learning to find the gift over a training period of 500 episodes.*
 
 ## Environment initialisation
 
