@@ -1,20 +1,22 @@
 # OpenAI Gym and Python for Q-learning
 
-This repo uses the [Frozen Lake environment](https://www.gymlibrary.dev/environments/toy_text/frozen_lake/) to train an agent using Q-learning - a model free reinforcement learning algorithm which relies on bottom-up dynamic programming.
+This repo uses the [Frozen Lake environment](https://www.gymlibrary.dev/environments/toy_text/frozen_lake/) to train an agent using *Q-learning* - a model free reinforcement learning algorithm which relies on bottom-up dynamic programming.
 
 <img src="./frozenlaketrainingvis.gif" width="256">
 
 ## Environment initialisation
 
-To initialise the Frozen Lake environment provided by OpenAI Gym we call `gym.make` as follows. These environments further provide a neat little 2D render through `env.render()`.
+To initialise the Frozen Lake environment provided by OpenAI Gym we call `gym.make` as follows. These environments further provide a neat little 2D render through `env.render()`. It is not advised to train with rendering enabled as this significantly increases run time!
 
 If `is_slippery` is set to True then the movement is partially stochastic, i.e. the agent will move in the intended direction with a probability of 1/3 and in either *perpendicular* direction with an equal probability of 1/3 in both directions.
 
 ```python
-env = gym.make("FrozenLake-v1", render_mode="human", is_slippery=False)
+# Set render_mode="human" to enable rendering, else render_mode=None
+env = gym.make("FrozenLake-v1", render_mode=None, is_slippery=False)
 env.reset()
 
-env.render()
+if env.render_mode == "human":
+    env.render()
 ```
 
 ## Environment interaction
