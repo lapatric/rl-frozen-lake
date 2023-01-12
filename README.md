@@ -2,7 +2,7 @@
 
 This repo follows the [Frozen Lake tutorial](https://www.gymlibrary.dev/environments/toy_text/frozen_lake/).
 
-![some text](./frozenlaketrainingvis.gif)
+<img src="./frozenlaketrainingvis.gif" width="256">
 
 ## Environment initialisation
 
