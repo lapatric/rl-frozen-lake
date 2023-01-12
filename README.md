@@ -1,6 +1,6 @@
 # OpenAI Gym and Python for Q-learning
 
-This repo follows the [Frozen Lake tutorial](https://www.gymlibrary.dev/environments/toy_text/frozen_lake/).
+This repo uses the [Frozen Lake environment](https://www.gymlibrary.dev/environments/toy_text/frozen_lake/) to train an agent using Q-learning - a model free reinforcement learning algorithm which relies on bottom-up dynamic programming.
 
 <img src="./frozenlaketrainingvis.gif" width="256">
 
