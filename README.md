@@ -158,4 +158,4 @@ for episode in tqdm(range(n_episodes)):
     # once a game is finished we decay epsilon -> converge towards exploitation
     agent.decay_epsilon()
 ```
-The [gif](#-openai-gym-and-python-for-q-learning) at the very top of this README is a visualisation of the agent learning to find the gift (target) over 500 episodes. 
+The [gif](#openai-gym-and-python-for-q-learning) at the very top of this README is a visualisation of the agent learning to find the gift (target) over 500 episodes. 
