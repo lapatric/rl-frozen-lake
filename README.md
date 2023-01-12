@@ -1,6 +1,6 @@
 # OpenAI Gym and Python for Q-learning
 
-![some text](./frozenlaketraining.gif)
+![some text](./frozenlaketrainingvis.gif)
 
 This repo follows the [Frozen Lake tutorial](https://www.gymlibrary.dev/environments/toy_text/frozen_lake/).
 
