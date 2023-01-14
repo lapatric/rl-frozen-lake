@@ -161,3 +161,21 @@ for episode in tqdm(range(n_episodes)):
     agent.decay_epsilon()
 ```
 The [gif](#openai-gym-and-python-for-q-learning) at the very top of this README is a visualisation of the agent learning to find the gift (target) over 500 episodes. 
+
+## Training Progress
+
+After training for 100'000 episodes we plot three graphs to visualise the progress.
+- Episode rewards: Shows the cumulative rewards over each episode.
+- Episode lengths: Shows the number of steps each episode takes.
+- Training error: The difference between the old q-value and the new q-value in each step update.
+
+<img src="./training_plots.png" width="512">
+
+## Policy Visualization
+
+In addition to plotting training process, we also plot the resulting policy after 100'000 training episodes. 
+
+- Value map: The value map shows the expected discounted return in each state (location).
+- Policy map: The policy map shows the optimal action in each state.
+
+<img src="./value_and_policy_plot.png" width="512">
